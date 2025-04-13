@@ -10,4 +10,9 @@ const nextConfig: NextConfig = {
   },
 };
 
-export default nextConfig;
+export default {
+  images: {
+    loader: 'default', // Prevents Vercel's optimization
+    unoptimized: true, // Disables all image optimizations globally
+  },
+};
