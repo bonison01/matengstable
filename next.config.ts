@@ -8,13 +8,12 @@ const nextConfig: NextConfig = {
   },
 
   images: {
-    // ✅ Enables image optimization for images from this domain
-    domains: ['mdxeolqfiosscdommyhc.supabase.co'],
-    
-    // Use Next.js default loader (which enables optimization)
+    // Disables Next.js image optimization completely
     loader: 'default',
+    unoptimized: true,
 
-    // Don't set `unoptimized: true` if you want optimization
+    // You don't *need* this if unoptimized is true, but it's okay to leave in
+    domains: ['mdxeolqfiosscdommyhc.supabase.co'],
   },
 };
 
